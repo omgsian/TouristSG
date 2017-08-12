@@ -1,0 +1,26 @@
+{
+    "id": "pano3",
+    "lat": "1.2811152",
+    "lng": "103.8445033",
+    "heading": "-39.82094094263109",
+    "pitch": "20.49388356321969",
+
+    "sounds": [
+        {
+            "name": "templebells",
+            "lat": "1.2811152",
+            "lng": "103.8445033",
+            "src": ["./media/audio/buddhisttemple-1.mp3"],
+            "db": "20",
+            "pause": "0"
+        },
+        {
+            "name": "templebells",
+            "lat": "1.2811152",
+            "lng": "103.8445033",
+            "src": ["./media/audio/buddhisttemple-2.mp3"],
+            "db": "20",
+            "pause": "0"
+        }
+    ]
+}

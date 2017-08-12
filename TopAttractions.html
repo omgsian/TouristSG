@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TouristSG</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="dist/css/site.css">
+<link href="./dist/css/simple-sidebar.css" rel="stylesheet">
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.10.1.js'></script>
+<script src="dist/js/sidebar.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=panoramio,places,visualization&sensor=true_or_false"></script>
+<script type="text/javascript" src="./extlib/gest.js/src/gest.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ui-map/3.0-rc1/jquery.ui.map.js"></script>
+<script>
+</script>
+</head>
+<body>
+
+ <img src = "media/images/topattractions.jpg" width="100%" height="100%"> 
+
+
+
+<div class="container">
+    <nav class='sidebar sidebar-menu-collapsed'>
+        <a href='#' id='justify-icon' title = 'Expand Sidebar'>
+            <span class='glyphicon glyphicon-align-justify'></span>
+        </a>
+        <ul>
+            <li class='active'>
+                <a class='expandable' id="home" href='index.html' title='Dashboard'>
+                    <span class='glyphicon glyphicon-home collapsed-element'></span>
+                    <span class='expanded-element'>Home</span>
+                </a>
+            </li>
+            <li>
+                <a class='expandable' id="showPano" href='#' title='Map Panaromio' onclick="showPano()">
+                    <span class='glyphicon glyphicon-book collapsed-element'></span>
+                    <span class='expanded-element'>Pano</span>
+                </a>
+            </li>
+            <li>
+                <a class='expandable' href='#' id='heatMap' title='Heat Map Of Frequently Visited Areas' onclick="heatMap()">
+                    <span class='glyphicon glyphicon-cloud collapsed-element'></span>
+                    <span class='expanded-element'>Heatmap</span>
+                </a>
+            </li>
+            <li>
+                <a class='expandable' id="searchBtn" data-toggle="modal" data-target="#attrModal" href='#'
+                   title='Search By Attraction Category'>
+                    <span class='glyphicon glyphicon-search collapsed-element'></span>
+                    <span class='expanded-element'>Search</span>
+                </a>
+            </li>
+            <li>
+                <a class='expandable' href='./TopAttractions.html' title='Top Attractions'>
+                    <span class='glyphicon glyphicon-flag collapsed-element'></span>
+                    <span class='expanded-element'>Top Attractions</span>
+                </a>
+            </li>
+            <li>
+                <a class='expandable' href='soundstreet.html' title='Sounds Of Singapore'>
+                    <span class='glyphicon glyphicon-volume-down collapsed-element'></span>
+                    <span class='expanded-element'>SGSounds</span>
+                </a>
+            </li>
+        </ul>
+        <a href='#' id='logout-icon' title='Reset View' onclick="initialize()">
+            <span class='glyphicon glyphicon-off'></span>
+        </a>
+    </nav>
+</div>
+
+<div class="modal fade attrModal" tabindex="-1" role="dialog" aria-labelledby="attrModal" aria-hidden="true"
+     id="attrModal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Attraction Types</h4>
+                </div>
+                <div class="modal-body">
+                    <a href="#" onclick="loadNatureWildlife()" id="loadNatureWildlife">Nature & Wildlife</a><br/>
+                    <a href="#" onclick="loadPoW()" id="loadPow">Places of Worship</a><br/>
+                    <a href="#" onclick="loadNeighbourhood()" id="loadNeighbourhood">Neighbourhoods</a><br/>
+                    <a href="#" onclick="loadResLei()" id="loadResLei">Recreation & Leisure</a><br/>
+                    <a href="#" onclick="loadArts()" id="loadArts">Arts</a><br/>
+                    <a href="#" onclick="loadHistory()" id="loadHistory">History</a><br/>
+                    <a href="#" onclick="loadArchitecture()" id="loadArchitecture">Architecture</a><br/>
+                    <a href="#" onclick="loadNightlife()" id="loadNightlife">Nightlife</a><br/>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

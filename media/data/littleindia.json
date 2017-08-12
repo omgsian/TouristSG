@@ -1,0 +1,32 @@
+{
+    "id": "pano",
+
+    "lat": "1.282529",
+    "lng": "103.84542899999997",
+    "heading": "-31.91520599753016",
+    "pitch": "1",
+
+    "sounds": [
+        {
+            "name": "templebells",
+            "lat": "1.282529",
+            "lng": "103.84542899999997",
+            "src": [
+                "./media/audio/indiantemple-bell.mp3"
+            ],
+            "db": "20",
+            "pause": "0"
+        },
+        {
+            "name": "roadnoise",
+            "lat": "1.282529",
+            "lng": "103.84542899999997",
+            "src": [
+                "./media/audio/roadnoise.mp3"
+            ],
+            "db": "10",
+            "pause": "0"
+        }
+    ]
+
+}

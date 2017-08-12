@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./js/sosv.min.js"></script>
+    <script type="text/javascript" src="./extlib/gest.js/src/gest.js"></script>
+    <script>
+        $(function () {
+            // Create your Sound of Street View - make sure the path points to your JSON file
+            new SOSV('./media/data/chinatown.json');
+        });
+    </script>
+    <script>
+        gest.start();
+        //gest.options.debug(true);
+
+        gest.options.subscribeWithCallback(function (gesture) {
+            if (gesture.left) {
+                console.log(document.getElementById('#pano3'));
+            } else if (gesture.right) {
+                console.log('Right gesture recognised')
+            }
+        });
+    </script>
+
+    <style>
+        #pano3 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="pano3"></div>
+
+</body>
+</html>

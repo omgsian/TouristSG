@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="dist/css/site.css">
+    <script type='text/javascript' src='//code.jquery.com/jquery-1.10.1.js'></script>
+    <script src="dist/js/sidebar.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <nav class='sidebar sidebar-menu-collapsed'>
+        <a href='#' id='justify-icon' title = 'Expand Sidebar'>
+            <span class='glyphicon glyphicon-align-justify'></span>
+        </a>
+        <ul>
+            <li class='active'>
+                <a class='expandable' id="home" href='index.html' title='Dashboard'>
+                    <span class='glyphicon glyphicon-home collapsed-element'></span>
+                    <span class='expanded-element'>Home</span>
+                </a>
+            </li>
+            <li>
+                <a class='expandable' id="showPano" href='#' title='Map Panaromio' onclick="showPano()">
+                    <span class='glyphicon glyphicon-book collapsed-element'></span>
+                    <span class='expanded-element'>Pano</span>
+                </a>
+            </li>
+            <li>
+                <a class='expandable' href='#' id='heatMap' title='Heat Map Of Frequently Visited Areas' onclick="heatMap()">
+                    <span class='glyphicon glyphicon-cloud collapsed-element'></span>
+                    <span class='expanded-element'>Heatmap</span>
+                </a>
+            </li>
+            <li>
+                <a class='expandable' id="searchBtn" data-toggle="modal" data-target="#attrModal" href='#'
+                   title='Search By Attraction Category'>
+                    <span class='glyphicon glyphicon-search collapsed-element'></span>
+                    <span class='expanded-element'>Search</span>
+                </a>
+            </li>
+            <li>
+                <a class='expandable' href='./TopAttractions.html' title='Top Attractions'>
+                    <span class='glyphicon glyphicon-flag collapsed-element'></span>
+                    <span class='expanded-element'>Top Attractions</span>
+                </a>
+            </li>
+            <li>
+                <a class='expandable' href='soundstreet.html' title='Sounds Of Singapore'>
+                    <span class='glyphicon glyphicon-volume-down collapsed-element'></span>
+                    <span class='expanded-element'>SGSounds</span>
+                </a>
+            </li>
+        </ul>
+        <a href='#' id='logout-icon' title='Reset View' onclick="initialize()">
+            <span class='glyphicon glyphicon-off'></span>
+        </a>
+    </nav>
+</div>
+<div class="container">
+    <div class="row" style="margin-top: 20px; margin-left: 60px">
+        <h1> Sounds of Singapore</h1>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="./media/images/masjid-sultan.JPG" height="200px" alt="...">
+
+                <div class="caption">
+                    <h3>Masjid Sultan</h3>
+
+                    <p>Masjid Sultan is located at Muscat Street and North Bridge Road within the Kampong Glam district of Rochor Planning Area in Singapore. The mosque is considered one of the most important mosques in Singapore. The prayer hall and domes highlight the mosque's star features.</p>
+
+                    <p><a href="masjidsultan.html" class="btn btn-primary" role="button">Street View</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="./media/images/buddha-relic-temple.jpg" height="200px" alt="...">
+
+                <div class="caption">
+                    <h3>Buddha Tooth Relic Temple</h3>
+
+                    <p>This Tang-styled Chinese Buddhist temple in Chinatown gets its name from what the Buddhists regard as the Sacred Buddha Tooth Relic.</p>
+
+                    <p><a href="buddhatemple.html" class="btn btn-primary" role="button">Street View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="./media/images/srimariamman.jpg" height="200px" alt="...">
+
+                <div class="caption">
+                    <h3>Sri Mariamman Temple</h3>
+
+                    <p>Bustling Chinatown is home to the oldest Hindu temple in Singapore, the Sri Mariamman Temple. Dating back to 1827, the temple was known as Mariamman Kovil or Kling Street Temple, and built by immigrants from the Nagapatnam and Cuddalore districts of South India. It is dedicated to the goddess Mariamman, known for her power to cure illnesses and diseases.</p>
+
+                    <p><a href="srimariamman.html" class="btn btn-primary" role="button">Street View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
